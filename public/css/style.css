@@ -1,0 +1,39 @@
+.bg-page{
+    height: 100vh;
+}
+
+.bg-counter{
+    background-color: white; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.199);
+    border-radius: 8px;
+}
+
+button:focus,textarea:focus, input:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.btn-add{
+    background-color: rgb(0, 140, 165);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    margin: 10px 10px 10px 0px;
+}
+
+.btn-add:hover{
+    background-color: rgb(0, 110, 129);
+}
+
+.btn-decrease{
+    background-color: rgb(165, 25, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+.btn-decrease:hover{
+    background-color: rgb(129, 0, 0);
+}
