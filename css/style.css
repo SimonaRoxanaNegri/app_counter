@@ -1,0 +1,9 @@
+.bg-page{
+    height: 100vh;
+}
+
+.bg-counter{
+    background-color: white; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.199);
+    border-radius: 8px;
+}
