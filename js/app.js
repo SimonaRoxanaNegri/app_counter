@@ -30,8 +30,14 @@ let count = 0
 let valueCounter = document.getElementById("count")
 valueCounter.innerHTML = count
 
+let fade = document.getElementById("spaceman-fade")
+
 function add() {
     document.getElementById("count").innerHTML = ++count
+    let currentBottom = parseInt(document.getElementById("spaceman").style.bottom) || 0
+    document.getElementById("spaceman").style.bottom = currentBottom + 150 + "px"
+    fade.classList.toggle("fade")
+
 }
 
 /* ALERT */
@@ -43,6 +49,9 @@ alertCustom.appendChild(divAlert).addEventListener("click", decrease)
 function decrease() {
     if (count > 0) {
         document.getElementById("count").innerHTML = --count
+        let currentBottom = parseInt(document.getElementById("spaceman").style.bottom) || 0
+        document.getElementById("spaceman").style.bottom = currentBottom + -150 + "px"
+        fade.classList.toggle("fade")
     }
     else {
         document.getElementById("alert").innerHTML = `<div class="alert alert-custom alert-dismissible show alert-custom" role="alert">
@@ -55,4 +64,5 @@ function decrease() {
 function reset() {
     count = 0
     document.getElementById("count").innerHTML = count
+    document.getElementById("spaceman").style.bottom = 0 + "px"
 }

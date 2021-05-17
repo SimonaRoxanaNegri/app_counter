@@ -56,10 +56,37 @@ button:focus,textarea:focus, input:focus{
       color:white !important;
   }
 
+  .spaceman{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    bottom:0px;
+  }
+  .spaceman_div img{
+    animation: animate_spaceman_transition 1s  linear infinite;
+  }
+
+  @keyframes animate_spaceman_transition {
+    50%{
+      width: 290px;
+    }
+  }
+
+  #spaceman-fade {
+    opacity: 0;
+    transition: opacity 1s; 
+  }
+  
+  #spaceman-fade.fade {
+    opacity: 1;
+  }
 
   @media (hover: none) {
     .btn-custom:hover {
       text-shadow:none;
+    }
+    .spaceman{
+      display: none;
     }
   }
 
