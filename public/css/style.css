@@ -17,9 +17,12 @@ body{
 }
 
 button:focus,textarea:focus, input:focus{
-    outline:0px !important;
+    outline:none !important;
     -webkit-appearance:none;
     box-shadow: none !important;
+   -webkit-tap-highlight-color: transparent !important;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 .btn-custom {
@@ -27,10 +30,11 @@ button:focus,textarea:focus, input:focus{
     padding: 10px 20px;
     border: 2px solid rgb(0, 109, 182);
     margin: 30px 10px;
+	background-color:transparent;
 }
 
 .btn-custom:hover {
-    text-shadow: 0 0 10px rgb(0, 109, 182),
+   text-shadow: 0 0 10px rgb(0, 109, 182),
       0 0 20px rgb(0, 109, 182),
       0 0 30px rgb(0, 109, 182),
       0 0 40px rgb(0, 109, 182),
@@ -38,5 +42,12 @@ button:focus,textarea:focus, input:focus{
       0 0 80px rgb(0, 109, 182),
       0 0 100px rgb(0, 109, 182),
       0 0 150px rgb(0, 109, 182);
-  }
+     
+  } 
 
+  @media (hover: none) {
+    .btn-custom:hover {
+      text-shadow:none;
+    }
+  }
+  
