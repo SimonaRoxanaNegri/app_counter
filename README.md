@@ -10,7 +10,7 @@ Le funzionalità sono state le seguenti:
 - [x] aumentare,decrementare e resettare il valore tramite l'evento click dei bottoni;
 - [x] impostare il valore di partenza a 0 visibile all'utente appena entrato nella pagina;
 - [x] al click,al salire,al scendere e al reset del valore c'è la comparsa di animazioni;
-- [x] messo limite minimo da 0 in su, al click per scendere sotto lo zero compare un alert di avvertimento;
+- [x] messo limite minimo da 0 in su, al click per scendere sotto lo zero compare un alert di avvertimento.
 # Deploy
 E' stata deployata utilizzando firebase come servizio hosting e collegata con il repository di github.
 \
